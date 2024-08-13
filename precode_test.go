@@ -27,7 +27,7 @@ func TestMainHandlerWhenCountMoreThanTotal(t *testing.T) {
 }
 
 func TestMainHandlerWhenOK(t *testing.T) {
-	req := httptest.NewRequest("GET", "/cafe?count=2&city=rostov", nil)
+	req := httptest.NewRequest("GET", "/cafe?count=2&city=moscow", nil)
 
 	responseRecorder := httptest.NewRecorder()
 	handler := http.HandlerFunc(mainHandle)

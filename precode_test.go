@@ -12,7 +12,7 @@ import (
 
 func TestMainHandlerWhenCountMoreThanTotal(t *testing.T) {
 	totalCount := 4
-	req := httptest.NewRequest("GET", "/cafe?count=9&city=moscow", nil)
+	req := httptest.NewRequest("GET", "/cafe?count=8&city=moscow", nil)
 
 	responseRecorder := httptest.NewRecorder()
 	handler := http.HandlerFunc(mainHandle)
